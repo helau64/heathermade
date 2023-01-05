@@ -7,7 +7,39 @@ module.exports = {
         green: 'rgb(0, 169, 92)',
         red: 'rgb(255, 102, 94)',
         sunflower: 'rgb(255, 181, 17)'
-      }
+      },
+      fontFamily: {
+        goodsans: [
+          'Good Sans',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        reckless: [
+          'Reckless',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          '"Segoe UI"',
+          'Roboto',
+          '"Helvetica Neue"',
+          'Arial',
+          '"Noto Sans"',
+          'sans-serif',
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ]
+      },
     },
     screens: {
       xxs: '350px',

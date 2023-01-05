@@ -1,5 +1,6 @@
 body {
     @apply text-black;
+    @apply font-goodsans;
 
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
