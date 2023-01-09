@@ -1,0 +1,21 @@
+.hero {
+    @apply relative;
+    @apply bg-blue;
+    @apply text-white;
+    @apply py-10;
+    @apply -rotate-3;
+
+    width: calc(100% + 40px);
+    left: -20px;
+
+}
+
+.hero .contained-width {
+    @apply relative;
+
+    left: 20px;
+}
+
+.hero__content {
+    padding-right: 40px;
+}

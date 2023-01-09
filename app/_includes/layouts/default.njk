@@ -16,6 +16,14 @@
   <body>
     {% include "partials/navigation.njk" %}
 
+    <header class="hero hero--{{path}}">
+        <div class="contained-width">
+            <div class="hero__content">
+                <h1>{{title}}</h1>
+            </div>
+        </div>
+    </header>
+
     <main class="content">
       {{ content | safe }}
     </main>

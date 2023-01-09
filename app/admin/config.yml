@@ -12,9 +12,9 @@ public_folder: "/static/images"
 local_backend: true
 # publish_mode: editorial_workflow
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "app/content/posts/blog"
+  - label: "Notes"
+    name: "notes"
+    folder: "app/content/posts/notes"
     create: true
     slug: "{{slug}}"
     editor:

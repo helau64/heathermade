@@ -1,16 +1,14 @@
 ---
-title: Blog
+title: Notes
 layout: "layouts/default.njk"
-permalink: "blog/"
+permalink: "notes/"
 ---
 
 <div>
 
-    <h1>{{title}}</h1>
-
     {{ content | safe }}
 
-    {% set postslist = collections.blog %}
+    {% set postslist = collections.notes %}
 
     <ul>
         {% for post in postslist | reverse %}

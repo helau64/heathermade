@@ -5,3 +5,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
+
+h1 {
+    @apply text-7xl;
+    @apply font-reckless;
+
+    @include max-width(md) {
+        @apply text-5xl;
+    }
+}
