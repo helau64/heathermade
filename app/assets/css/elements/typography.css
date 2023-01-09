@@ -9,6 +9,8 @@ body {
 h1 {
     @apply text-7xl;
     @apply font-reckless;
+    @apply font-semibold;
+    @apply tracking-wide;
 
     @include max-width(md) {
         @apply text-5xl;

@@ -1,11 +1,30 @@
 .page--home {
     .page-specific-bg {
         @apply bg-blue;
+
+        path {
+            @apply fill-blue;
+        }
     }
 }
 
 .page--contact {
     .page-specific-bg {
         @apply bg-sunflower;
+        @apply text-black;
+
+        path {
+            @apply fill-sunflower;
+        }
+    }
+}
+
+.page--about {
+    .page-specific-bg {
+        @apply bg-green;
+
+        path {
+            @apply fill-green;
+        }
     }
 }

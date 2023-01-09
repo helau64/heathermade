@@ -2,13 +2,28 @@
     @apply relative;
     @apply bg-green;
     @apply text-white;
-    @apply py-10;
     @apply mt-4;
+    @apply py-2;
     @apply -rotate-3;
 
     width: calc(100% + 40px);
     left: -20px;
 
+}
+
+.hero__border {
+    @apply absolute;
+    @apply w-full;
+}
+
+.hero__border--top {
+    @apply top-1;
+    @apply -translate-y-full;
+}
+
+.hero__border--bottom {
+    @apply bottom-1;
+    @apply translate-y-full;
 }
 
 .hero .contained-width {
