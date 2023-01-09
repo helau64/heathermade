@@ -12,6 +12,8 @@ body {
 }
 
 .content {
+    @apply py-12;
+
     flex: 1 0 auto;
     justify-self: flex-start;
 }
@@ -24,5 +26,5 @@ body {
 }
 
 .max-width {
-    max-width: var(--max-width);
+    max-width: $max-width;
 }

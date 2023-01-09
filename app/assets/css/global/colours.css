@@ -1,0 +1,11 @@
+.page--home {
+    .page-specific-bg {
+        @apply bg-blue;
+    }
+}
+
+.page--contact {
+    .page-specific-bg {
+        @apply bg-sunflower;
+    }
+}

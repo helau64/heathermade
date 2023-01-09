@@ -7,8 +7,10 @@ module.exports = {
       colors: {
         blue: 'rgb(50, 85, 164)',
         green: 'rgb(0, 169, 92)',
-        red: 'rgb(255, 102, 94)',
-        sunflower: 'rgb(255, 181, 17)'
+        red: 'rgb(230, 92, 85)',
+        sunflower: 'rgb(255, 181, 17)',
+        orange: 'rgb(243, 129, 27)',
+        pink: 'rgb(249, 132, 202)',
       },
       fontFamily: {
         goodsans: [

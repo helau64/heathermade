@@ -1,4 +1,10 @@
 ---
 items:
+  - text: About
+    url: "/about"
+  - text: Work
+    url: "/work"
   - text: Notes
     url: "/notes"
+  - text: Contact
+    url: "/contact"

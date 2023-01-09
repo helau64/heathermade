@@ -13,10 +13,10 @@
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
   </head>
-  <body>
+  <body class="page--{{path}}">
     {% include "partials/navigation.njk" %}
 
-    <header class="hero hero--{{path}}">
+    <header class="hero page-specific-bg">
         <div class="contained-width">
             <div class="hero__content">
                 <h1>{{title}}</h1>

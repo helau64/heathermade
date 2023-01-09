@@ -1,5 +1,27 @@
+.footer {
+    @apply bg-red;
+    @apply relative;
+}
+
+.footer__border {
+    @apply absolute top-1;
+    @apply w-full;
+    @apply -translate-y-full;
+}
+
 .footer__content {
+    @apply relative z-10;
     @apply contained-width;
     @apply text-center;
-    @apply py-8;
+    @apply font-medium;
+    @apply pb-8 pt-4;
+}
+
+.footer__links {
+    @apply flex justify-center;
+    @apply mb-4;
+
+    li {
+        @apply mx-2;
+    }
 }
