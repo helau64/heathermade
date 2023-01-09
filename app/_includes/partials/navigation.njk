@@ -1,21 +1,24 @@
 <nav class="navigation">
-    <a href="/" aria-label="Home">Logo</a>
+    <div class="navigation__content">
+        <a href="/" aria-label="Home" class="navigation__logo">
+            Logo
+        </a>
 
-    <button aria-label="Menu" class="mobile-only">
-        <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
-            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
-        </svg>
-    </button>
+        <button class="navigation__toggle mobile-only" aria-label="Open navigation menu" aria-expanded="false">
+            <svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                <path class="icon-cross" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                <path class="icon-hamburger" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+        </button>
 
-    {% if navigation.items %}
-        <ul class="navigation__items">
-            {% for item in navigation.items %}
-                <li class="navigation__item">
-                    <a href="{{ item.url }}">{{ item.text }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    {% endif %}
+        {% if navigation.items %}
+            <ul class="navigation__items">
+                {% for item in navigation.items %}
+                    <li class="navigation__item">
+                        <a href="{{ item.url }}" class="reverse-underline">{{ item.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
 </nav>
-
