@@ -22,6 +22,7 @@
 .page--about {
     .page-specific-bg {
         @apply bg-green;
+        @apply text-black;
 
         path {
             @apply fill-green;

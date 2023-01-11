@@ -38,6 +38,7 @@
 @import "components/navigation";
 @import "components/footer";
 @import "components/hero";
+@import "components/listings";
 
 /*------------------------------------*\
   #PAGE-IMPORTS
