@@ -28,8 +28,6 @@
 
 .hero .contained-width {
     @apply relative;
-
-    left: 20px;
 }
 
 .hero__content {
@@ -39,5 +37,17 @@
 @include min-width(md) {
     .hero {
         @apply mt-8;
+    }
+}
+
+@include max-width(lg) {
+    .hero .contained-width {
+        left: 10px;
+    }
+}
+
+@include max-width(md) {
+    .hero .contained-width {
+        left: 15px;
     }
 }

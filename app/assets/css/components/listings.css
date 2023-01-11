@@ -81,9 +81,3 @@
         }
     }
 }
-
-@include min-width(md) {
-    .listings--home {
-        @apply mt-2;
-    }
-}

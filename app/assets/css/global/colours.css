@@ -21,11 +21,11 @@
 
 .page--about {
     .page-specific-bg {
-        @apply bg-green;
+        @apply bg-orange;
         @apply text-black;
 
         path {
-            @apply fill-green;
+            @apply fill-orange;
         }
     }
 }

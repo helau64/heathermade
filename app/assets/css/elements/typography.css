@@ -27,3 +27,11 @@ h2 {
         @apply text-3xl;
     }
 }
+
+.prose {
+    h1, h2 {
+        @apply font-goodsans;
+        @apply tracking-normal;
+        @apply font-bold;
+    }
+}
