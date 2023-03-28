@@ -23,6 +23,7 @@
         <div class="contained-width">
             <div class="hero__content">
               <h1>{% if hero %}{{hero}}{% else %}{{title}}{% endif %}</h1>
+              {% if path == 'note' %}<p class="hero__date">{{ page.date|readableDate }}</p>{% endif %}
             </div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 24" preserveAspectRatio="xMidYMid meet" aria-hidden="true" class="hero__border hero__border--bottom">

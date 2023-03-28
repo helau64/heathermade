@@ -1,6 +1,7 @@
 {
     "layout": "layouts/note.njk",
     "permalink": "notes/{{title | slug}}/",
+    "path": "note",
     "tags": [
         "note"
     ]

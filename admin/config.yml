@@ -16,7 +16,6 @@ collections:
     name: "notes"
     folder: "app/content/posts/notes"
     create: true
-    slug: "{{slug}}"
     editor:
       preview: false
     fields:

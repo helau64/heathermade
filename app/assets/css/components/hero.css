@@ -34,6 +34,11 @@
     padding-right: 40px;
 }
 
+.hero__date {
+    @apply mt-4;
+    @apply font-bold;
+}
+
 @include min-width(md) {
     .hero {
         @apply mt-8;
@@ -49,5 +54,17 @@
 @include max-width(md) {
     .hero .contained-width {
         left: 15px;
+    }
+}
+
+/*------------------------------------*\
+  #CHILD-HERO
+\*------------------------------------*/
+
+.page--note {
+    .hero {
+        h1 {
+            @apply text-5xl;
+        }
     }
 }

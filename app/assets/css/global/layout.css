@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-    @apply pb-8 pt-20;
+    @apply pb-16 pt-20;
 
     flex: 1 0 auto;
     justify-self: flex-start;
@@ -35,6 +35,6 @@ body {
 
 @include max-width(md) {
     .content {
-        @apply pb-8 pt-12;
+        @apply pb-16 pt-12;
     }
 }
