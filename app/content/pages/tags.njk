@@ -1,16 +1,18 @@
 ---
-title: Notes
 layout: "layouts/default.njk"
-path: notes
 pagination:
-    data: collections.notes
+    data: collections
     size: 1
-    permalink: "/notes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
+    alias: tag
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: "/tags/{{tag}}/"
+path: tags
 ---
 
 <div class="contained-width">
 
-    {% set postslist = collections.notes %}
+    {% set postslist = collections[tag] %}
 
     <article>
         <ul class="listings--notes">
@@ -19,19 +21,17 @@ pagination:
                     <a href="{{ post.url | url }}" class="listings__link">
                         <h3>{{ post.data.title }}</h3>
                         <p class="listings__date">{{ post.date|readableDate }}</p>
+                        {% if post.data.description %}<p class="listings__description">{{post.data.description}}</p>{% endif %}
                     </a>
                     <ul class="listings__tags">
                         {% for tag in post.data.tags %}
-                            {% if tag != 'notes' %}
-                                <li class="listings__tag">
-                                    <a href="/tags/{{tag | slugify}}">{{tag}}</a>{% if not loop.last %},{% endif %} 
-                                </li>
-                            {% endif %}
+                            <li class="listings__tag">
+                                <a href="/tags/{{tag | slugify}}">{{tag}}</a>{% if not loop.last %},{% endif %} 
+                            </li>
                         {% endfor %}
                     </ul>
                 </li>
             {% endfor %}
         </ul>
     </article>
-    {% include "partials/pagination.njk" %}
 </div>

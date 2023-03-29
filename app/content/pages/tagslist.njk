@@ -1,0 +1,19 @@
+---
+title: Tags
+layout: "layouts/default.njk"
+path: tags
+permalink: tags/
+---
+
+<div class="contained-width">
+    <article class="max-text-width prose prose-lg prose-stone">
+        <ul>
+            {% for tag in collections.all | getAllTags | filterTagList %}
+                {% set tagUrl %}{% endset %}
+                <li>
+                    <a href="/tags/{{ tag | slugify }}/" class="post-tag">{{ tag }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+    </article>
+</div>

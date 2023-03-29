@@ -22,7 +22,7 @@
         </svg>
         <div class="contained-width">
             <div class="hero__content">
-              <h1>{% if hero %}{{hero}}{% else %}{{title}}{% endif %}</h1>
+              <h1>{% if hero %}{{hero}}{% else %}{{title or eleventyComputed.title}}{% endif %}</h1>
               {% if path == 'note' %}<p class="hero__date">{{ page.date|readableDate }}</p>{% endif %}
             </div>
         </div>

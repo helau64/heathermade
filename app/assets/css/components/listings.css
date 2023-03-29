@@ -81,3 +81,52 @@
         }
     }
 }
+
+/*------------------------------------*\
+  #LISTINGS-HOME
+\*------------------------------------*/
+
+.listings--notes {
+    @apply flex flex-col gap-12;
+}
+
+.listings--notes {
+    .listings__item {
+        @apply border-4 border-blue;
+    }
+
+    .listings__link {
+        @apply block;
+        @apply no-underline;
+        @apply p-6 pb-0;
+
+        &:hover, &:focus, &:active {
+            h3 {
+                @apply underline;
+                @apply decoration-blue;
+            }
+        }
+    }
+
+    h3 {
+        @apply text-4xl;
+        @apply font-reckless font-semibold;
+    }
+
+    .listings__date {
+        @apply text-sm;
+        @apply font-bold;
+        @apply pt-2 mt-2;
+        @apply border-t-2 border-blue;
+    }
+
+    .listings__description {
+        @apply mt-2;
+    }
+
+    .listings__tags {
+        @apply flex gap-2;
+        @apply p-6 pt-4;
+    }
+
+}

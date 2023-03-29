@@ -30,6 +30,7 @@
 @import "elements/inputs";
 @import "elements/links";
 @import "elements/typography";
+@import "elements/pagination";
 
 /*------------------------------------*\
   #COMPONENT-IMPORTS
