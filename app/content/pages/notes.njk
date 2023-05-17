@@ -2,15 +2,15 @@
 title: Notes
 layout: "layouts/default.njk"
 path: notes
+permalink: "/notes{% if pagination.pageNumber > 0 %}/{{ pagination.pageNumber + 1 }}{% endif %}/index.html"
 pagination:
     data: collections.notes
-    size: 1
-    permalink: "/notes/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}"
+    size: 4
 ---
 
 <div class="contained-width">
 
-    {% set postslist = collections.notes %}
+    {% set postslist = pagination.items %}
 
     <article>
         <ul class="listings--notes">

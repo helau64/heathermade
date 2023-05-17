@@ -34,11 +34,11 @@
 .page--notes,
 .page--note {
     .page-specific-bg {
-        @apply bg-green;
-        @apply text-white;
+        @apply bg-pink;
+        @apply text-black;
 
         path {
-            @apply fill-green;
+            @apply fill-pink;
         }
     }
 }

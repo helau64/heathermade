@@ -9,16 +9,17 @@
     "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "@tailwindcss/typography": "^0.5.8",
-    "browser-sync": "^2.11.2",
+    "@11ty/eleventy": "^2.0.1",
+    "@splidejs/splide": "^4.1.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "browser-sync": "^2.29.2",
     "chokidar": "^3.5.3",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.16.4",
+    "esbuild": "^0.17.19",
     "esbuild-postcss": "^0.0.4",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
-    "luxon": "^3.1.1",
+    "luxon": "^3.3.0",
     "npm-run-all": "^4.1.5",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-atroot": "^0.2.3",
@@ -26,12 +27,12 @@
     "postcss-easy-import": "^4.0.0",
     "postcss-map-get": "^0.3.0",
     "postcss-property-lookup": "^3.0.0",
-    "postcss-rem": "^2.0.2",
+    "postcss-rem": "^2.0.4",
     "postcss-scss": "^4.0.6",
-    "tailwindcss": "^3.2.4"
+    "tailwindcss": "^3.3.2"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20"
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23"
   }
 }

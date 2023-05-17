@@ -16,4 +16,9 @@
     .pagination__next {
         @apply ml-auto;
     }
+
+    .pagination__previous,
+    .pagination__next {
+        width: rem(100px);
+    }
 }
