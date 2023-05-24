@@ -19,6 +19,7 @@ pagination:
                     <a href="{{ post.url | url }}" class="listings__link">
                         <h3>{{ post.data.title }}</h3>
                         <p class="listings__date">{{ post.date|readableDate }}</p>
+                        <p class="listings__description">{{post.data.description}}</p>
                     </a>
                     <ul class="listings__tags">
                         {% for tag in post.data.tags %}

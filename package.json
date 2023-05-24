@@ -12,10 +12,9 @@
     "@11ty/eleventy": "^2.0.1",
     "@splidejs/splide": "^4.1.4",
     "@tailwindcss/typography": "^0.5.9",
-    "browser-sync": "^2.29.2",
+    "browser-sync": "^2.29.3",
     "chokidar": "^3.5.3",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.17.19",
     "esbuild-postcss": "^0.0.4",
     "html-minifier": "^4.0.0",
     "js-yaml": "^4.1.0",
@@ -33,6 +32,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "esbuild": "^0.16.17",
     "postcss": "^8.4.23"
   }
 }
