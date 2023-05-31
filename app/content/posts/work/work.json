@@ -1,0 +1,9 @@
+{
+    "layout": "layouts/work.njk",
+    "permalink": "work/{{title | slug}}/",
+    "path": "work",
+    "tags": [
+        "work"
+    ],
+    "copyLocalAssets": true
+}

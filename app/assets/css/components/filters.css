@@ -1,0 +1,23 @@
+.filters__link {
+    @apply no-underline;
+    @apply bg-green;
+    @apply text-white;
+    @apply px-4 py-1;
+    @apply uppercase font-bold tracking-wide;
+    @apply text-sm;
+
+    &:hover, &:focus, &:active {
+        @apply bg-sunflower;
+        @apply text-black;
+    }
+}
+
+.filters__items {
+    @apply flex gap-3 flex-wrap;
+}
+
+@include min-width(lg) {
+    .filters__items {
+        @apply flex-col;
+    }
+}

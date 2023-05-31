@@ -42,3 +42,14 @@
         }
     }
 }
+
+.page--work {
+    .page-specific-bg {
+        @apply bg-green;
+        @apply text-white;
+
+        path {
+            @apply fill-green;
+        }
+    }
+}

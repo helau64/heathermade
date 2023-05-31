@@ -1,0 +1,45 @@
+---
+title: Work
+layout: "layouts/default.njk"
+path: work
+pagination:
+    data: collections.media
+    size: 1
+    alias: medium
+permalink: "/work/{{medium | slugify}}/index.html"
+---
+{{medium}}
+<div class="contained-width">
+    <div class="page--work__content">
+        <aside class="page--work__sidebar filters">
+            <ul class="filters__items">
+                <li class="filters__item">
+                    <a href="/work" class="filters__link">All</a>
+                </li>
+                {% for key, value in collections.media %}
+                    <li class="filters__item">
+                        <a href="/work/{{key|slugify}}" class="filters__link">{{key}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        {% if pagination.pageNumber >= 0 %}
+            {% set postslist = collections.media[medium].posts | reverse %}
+        {% else %}
+            {% set postslist = collections.work | reverse %}
+        {% endif %}
+
+        <article class="page--work__body">
+            <ul class="listings--work no-macy">
+                {% for post in postslist %}
+                    <li class="listings__item">
+                        <a href="{{post.url}}" aria-label="{{post.data.title}}" class="listings__link">
+                            <img src="{{post.url}}/{{post.data.thumbnail}}" alt="">
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </article>
+    </div>
+</div>

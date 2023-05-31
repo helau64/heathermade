@@ -1,0 +1,25 @@
+@include min-width(lg) {
+    .page--work__content {
+        @apply grid grid-cols-12 gap-8;
+    }
+
+    .page--work__sidebar {
+        @apply col-span-3;
+        @apply border-r-4 border-green;
+    }
+
+    .page--work__body {
+        @apply col-span-9;
+    }
+}
+
+@include max-width(lg) {
+    .page--work__sidebar {
+        @apply border-b-4 border-green;
+        @apply pb-2;
+    }
+
+    .page--work__body {
+        @apply mt-4;
+    }
+}

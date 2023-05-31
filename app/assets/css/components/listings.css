@@ -1,7 +1,3 @@
-.listings {
-    
-}
-
 /*------------------------------------*\
   #LISTINGS-HOME
 \*------------------------------------*/
@@ -83,7 +79,7 @@
 }
 
 /*------------------------------------*\
-  #LISTINGS-HOME
+  #LISTINGS-NOTES
 \*------------------------------------*/
 
 .listings--notes {
@@ -129,4 +125,30 @@
         @apply p-6 pt-4;
     }
 
+}
+
+/*------------------------------------*\
+  #LISTINGS-WORK
+\*------------------------------------*/
+
+.listings--work {
+    .listings__link {
+        @apply inline-block;
+        @apply p-4;
+        @apply bg-sunflower;
+    }
+}
+
+.listings--work {
+    &.no-macy {
+        @apply grid grid-cols-2 gap-8;
+    }
+}
+
+@include max-width(sm) {
+    .listings--work {
+        &.no-macy {
+            @apply grid-cols-1 gap-4;
+        }
+    }
 }

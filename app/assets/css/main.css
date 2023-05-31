@@ -40,10 +40,13 @@
 @import "components/footer";
 @import "components/hero";
 @import "components/listings";
+@import "components/filters";
 
 /*------------------------------------*\
   #PAGE-IMPORTS
 \*------------------------------------*/
+
+@import "pages/work";
 
 /*------------------------------------*\
   #TAILWIND-IMPORTS
