@@ -1,7 +1,7 @@
 {
-    "layout": "layouts/work.njk",
+    "layout": "layouts/workpost.njk",
     "permalink": "work/{{title | slug}}/",
-    "path": "work",
+    "path": "workpost",
     "tags": [
         "work"
     ],

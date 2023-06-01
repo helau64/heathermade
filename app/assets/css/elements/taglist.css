@@ -1,0 +1,19 @@
+.taglist {
+    @apply flex flex-wrap gap-2;
+    @apply my-4;
+}
+
+.taglist__tag {
+    @apply inline-block;
+    @apply uppercase font-bold tracking-wide;
+    @apply text-sm;
+    @apply no-underline;
+    @apply bg-green;
+    @apply text-white;
+    @apply p-2;
+
+    &:hover, &:focus, &:active {
+        @apply bg-sunflower;
+        @apply text-black;
+    }
+}

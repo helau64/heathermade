@@ -1,0 +1,47 @@
+.page--workpost__image-container {
+    @apply order-1;
+}
+
+.page--workpost__body {
+    @apply order-2;
+}
+
+.page--workpost__title {
+    @apply text-2xl;
+    @apply mb-4;
+}
+
+.page--workpost__media {
+    @apply flex flex-wrap gap-1;
+    @apply text-sm;
+    @apply mb-3;
+
+    a {
+        @apply mr-1;
+    }
+}
+
+.page--workpost__images.no-glide {
+    @apply flex flex-col gap-8;
+}
+
+.page--workpost__image {
+    @apply bg-stone-700 p-4;
+}
+
+@include min-width(lg) {
+    .page--workpost__content {
+        @apply grid grid-cols-12 gap-12;
+    }
+
+    .page--workpost__body,
+    .page--workpost__image-container {
+        @apply col-span-6;
+    }
+}
+
+@include max-width(lg) {
+    .page--workpost__content {
+        @apply flex flex-col gap-8;
+    }
+}

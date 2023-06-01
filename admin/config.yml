@@ -42,8 +42,14 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown", required: false }
       - { label: "Featured Image", name: "thumbnail", choose_url: false, multiple: false }
-      - { label: "Images", name: "images", choose_url: false, multiple: true }
-      - widget: select
+      - widget: "list"
+        label: "Images"
+        name: "images"
+        fields:
+          - { label: "Source", name: "src", widget: "string" }
+          - { label: "Alt Text", name: "alt", widget: "string" }
+        required: false
+      - widget: "select"
         label: "Tags"
         name: "tags"
         multiple: true

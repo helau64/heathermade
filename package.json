@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^3.1.0",
+    "@glidejs/glide": "^3.6.0",
     "autoprefixer": "^10.4.14",
     "eleventy-plugin-page-assets": "github:maxboeck/eleventy-plugin-page-assets",
     "esbuild": "^0.16.17",
