@@ -1,8 +1,13 @@
 ---
-title: Work
 layout: "layouts/default.njk"
 path: work
-permalink: "/work/index.html"
+pagination:
+    data: collections.workMedia
+    size: 1
+    alias: medium
+eleventyComputed:
+    title: "{{ medium.name | title}}"
+permalink: "/work/{{medium.slug}}/index.html"
 ---
 
 <div class="contained-width">
@@ -20,7 +25,7 @@ permalink: "/work/index.html"
             </ul>
         </aside>
 
-        {% set postslist = collections.work | reverse %}
+        {% set postslist = collections.work | include("data.medium", medium.name) | reverse %}
 
         <article class="page--work__body">
             <ul class="listings--work no-macy">

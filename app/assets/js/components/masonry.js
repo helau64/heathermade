@@ -4,6 +4,8 @@ export default function() {
     let macyInitialised = false;
     const container = document.querySelector('.listings--work');
 
+    if (!container) return; 
+
     const macyInstance = Macy({
         container: '.listings--work',
         columns: 2,

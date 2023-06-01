@@ -3,7 +3,9 @@ const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 
+
 module.exports = function (eleventyConfig) {
+
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
@@ -17,34 +19,15 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  // Add collection for work
+  eleventyConfig.addFilter("include", require("./app/_11ty/filters/include.js"))
 
-  eleventyConfig.addCollection("work", function(collectionApi) {
+  // Add work collections
+
+  eleventyConfig.addCollection("workPosts", function(collectionApi) {
     return collectionApi.getFilteredByTag("work");
   });
 
-  // Add collections for each medium used in work
-
-  eleventyConfig.addCollection("media", function(collectionApi) {
-    let posts = collectionApi.getFilteredByTag("work");
-    let media = {};
-
-    posts.forEach(post => {
-      if (!post.data.medium) return;
-
-      post.data.medium.forEach(medium => {
-        if (!media[medium]) {
-          media[medium] = {
-            name: medium,
-            posts: []
-          }
-        }
-        media[medium].posts.push(post);
-      })
-    })
-
-    return media
-  });
+  eleventyConfig.addCollection("workMedia", require("./app/_11ty/collections/workMedia.js"))
 
   // Return all the tags used in a collection
 	eleventyConfig.addFilter("getAllTags", collection => {
