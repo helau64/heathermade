@@ -21,14 +21,6 @@
     }
 }
 
-.page--workpost__images.no-glide {
-    @apply flex flex-col gap-8;
-}
-
-.page--workpost__image {
-    @apply bg-stone-700 p-4;
-}
-
 @include min-width(lg) {
     .page--workpost__content {
         @apply grid grid-cols-12 gap-12;
@@ -43,5 +35,11 @@
 @include max-width(lg) {
     .page--workpost__content {
         @apply flex flex-col gap-8;
+    }
+}
+
+@include between-widths(md, lg) {
+    .page--workpost__image-container {
+        @apply max-w-2xl;
     }
 }

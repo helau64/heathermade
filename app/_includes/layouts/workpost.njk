@@ -12,7 +12,6 @@
     {% endif %}
     {% block head %}{% endblock %}
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   </head>
   <body class="page--{{path}}">
     {% include "partials/navigation.njk" %}
@@ -44,14 +43,28 @@
                       {% endfor %}
                     </ul>
                 </div>
-                <div class="page--workpost__image-container">
-                    <ul class="page--workpost__images no-glide">
-                        {% for image in images %}
-                            <li class="page--workpost__image">
-                              <img src="{{image.src}}" alt="{{image.alt}}">
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <div class="page--workpost__image-container glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="page--workpost__images glide__slides no-glide">
+                          {% for image in images %}
+                              <li class="page--workpost__image glide__slide">
+                                <img src="{{image.src}}" alt="{{image.alt}}">
+                              </li>
+                          {% endfor %}
+                      </ul>
+                      <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+                            <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+                          </svg>
+                        </button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+                            <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
                 </div>
             </article>  
         </div>

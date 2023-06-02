@@ -1,0 +1,26 @@
+.glide__track {
+    @apply bg-stone-700
+}
+
+.glide__slide {
+    @apply bg-stone-700 py-6;
+}
+
+.glide__arrows {
+    @apply flex items-center justify-between;
+    @apply px-4 pb-4;
+}
+
+.glide__arrow--left {
+    svg {
+        @apply rotate-180;
+    }
+}
+
+.no-glide {
+    @apply flex flex-col gap-8;
+
+    li {
+        @apply bg-stone-700 p-4;
+    }
+}

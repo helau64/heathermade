@@ -9,6 +9,8 @@
   #LIB-IMPORTS
 \*------------------------------------*/
 
+@import "libs/glide.core";
+
 /*------------------------------------*\
   #GLOBAL-IMPORTS
 \*------------------------------------*/
@@ -42,6 +44,7 @@
 @import "components/hero";
 @import "components/listings";
 @import "components/filters";
+@import "components/slider";
 
 /*------------------------------------*\
   #PAGE-IMPORTS
