@@ -4,6 +4,7 @@ description: Excited to announce that I am part of an extremely serious journal 
 date: 2023-05-24
 tags:
     - lgbtq
+    - culture
 ---
 
 Good news: I'm back on my bullshit. 

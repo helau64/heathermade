@@ -2,7 +2,7 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const htmlmin = require("html-minifier");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
 
@@ -54,6 +54,9 @@ module.exports = function (eleventyConfig) {
     postsMatching: "app/content/posts/work/*/*.md",
     recursive: true
   });
+
+  // Add RSS plugin
+  eleventyConfig.addPlugin(pluginRss);
   
   // Copy Static Files to /_Site
   eleventyConfig.addPassthroughCopy("./app/admin/config.yml");
