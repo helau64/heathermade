@@ -17,4 +17,4 @@ medium:
     - ceramics
 ---
 
-Stoneware / hand thrown / fired in oxidation
+Stoneware / Hand thrown / Fired in oxidation

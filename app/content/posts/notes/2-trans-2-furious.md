@@ -3,7 +3,7 @@ title: 2 Trans 2 Furious
 description: Excited to announce that I am part of an extremely serious journal of Transgender Street Racing Studies.
 date: 2023-05-24
 tags:
-    - gender
+    - lgbtq
 ---
 
 Good news: I'm back on my bullshit. 

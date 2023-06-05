@@ -1,6 +1,7 @@
 .taglist {
     @apply flex flex-wrap gap-2;
-    @apply my-4;
+    @apply my-4 pt-4;
+    @apply border-t-2 border-green;
 }
 
 .taglist__tag {

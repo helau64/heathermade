@@ -32,7 +32,9 @@ permalink: "/work/{{medium.slug}}/index.html"
                 {% for post in postslist %}
                     <li class="listings__item">
                         <a href="{{post.url}}" aria-label="{{post.data.title}}" class="listings__link">
-                            <img src="{{post.url}}/{{post.data.thumbnail}}" alt="">
+                            <div class="listings__link-content">
+                                <img src="{{post.url}}/{{post.data.thumbnail}}" alt="">
+                            </div>
                         </a>
                     </li>
                 {% endfor %}

@@ -1,26 +1,32 @@
 ---
-title: Maps (2023)
-permalink: "work/maps-2023-1/"
+title: wiggle world (2023)
+permalink: "work/wiggle-world/"
 date: 2023-05-26
 thumbnail: "images/map_1.jpg"
 images:
     - src: "images/map_1.jpg"
-      alt: "test"
+      alt: "A print on white A4 paper, showing an abstract map made up of pink, diagonal wavy lines drawn in fineliner"
     - src: "images/map_2.jpg"
-      alt: "test"
+      alt: "A print on white A4 paper, showing an abstract map made up of pink, diagonal wavy lines drawn in fineliner"
     - src: "images/map_3.jpg"
-      alt: "test"
+      alt: "A print on white A4 paper, showing an abstract map made up of pink, diagonal wavy lines drawn in fineliner"
 tags: 
-    - print
     - generative art
-    - tech
+    - print
+    - pen plotter
 medium: 
     - print
     - generative art
 ---
 
-Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor.
+Open variable edition / A4 / Axidraw pen plotter
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+Code written in p5.js
 
-Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor.
+<div class="responsive-embed">
+  <div class="responsive-embed__container">
+  <iframe src="https://editor.p5js.org/helau64/full/J3lbYxxtB" height="600"></iframe>
+</div>
+</div>
+
+
