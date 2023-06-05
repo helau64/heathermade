@@ -4,7 +4,7 @@
     @apply text-white;
     @apply mt-4;
     @apply py-2;
-    @apply -rotate-3;
+    @apply -rotate-1;
 
     width: calc(100% + 40px);
     left: -20px;
@@ -65,6 +65,22 @@
     .hero {
         h1 {
             @apply text-5xl;
+        }
+    }
+}
+
+/*------------------------------------*\
+  #HOME-HERO
+\*------------------------------------*/
+
+.page--home {
+    .hero {
+        @apply py-4;
+        
+        h1 {
+            @apply uppercase;
+            @apply font-goodsans;
+            @apply text-center;
         }
     }
 }
