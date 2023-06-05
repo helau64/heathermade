@@ -4,6 +4,8 @@
 
 .glide__slide {
     @apply bg-stone-700 py-6;
+    @apply h-auto;
+    @apply flex items-center;
 }
 
 .glide__arrows {

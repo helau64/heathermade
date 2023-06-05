@@ -11,6 +11,14 @@
     @apply h-16;
 }
 
+.navigation__logo {
+    @apply uppercase no-underline;
+
+    &:hover, &:focus, &:active {
+        @apply text-red;
+    }
+}
+
 @include max-width(lg) {
     .navigation {
         @apply relative;

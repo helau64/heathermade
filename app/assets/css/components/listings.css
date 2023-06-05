@@ -137,6 +137,20 @@
         @apply p-4;
         @apply bg-sunflower;
     }
+
+    .listings__link-content {
+        @apply overflow-hidden;
+
+        > * {
+            @apply transition-transform duration-150;
+        }
+
+        &:hover, &:focus, &:active {
+            > * {
+                @apply scale-110;
+            }
+        }
+    }
 }
 
 .listings--work {

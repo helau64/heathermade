@@ -6,7 +6,8 @@ export default function() {
     if (!container) return; 
 
     const glide = new Glide('.glide', {
-        peek: 25
+        peek: 30,
+        gap: 20
     });
 
     glide.on('mount.before', function() {
