@@ -7,8 +7,21 @@
     height: $nav-height;
 }
 
-.navigation__logo img {
-    @apply h-16;
+.navigation__logo {
+    svg {
+        @apply h-12;
+        @apply w-12;
+    }
+
+    &:hover, &:focus, &:active {
+        .stroke-change {
+            @apply stroke-red;
+        }
+
+        .fill-change {
+            @apply fill-red;
+        }
+    }
 }
 
 .navigation__logo {

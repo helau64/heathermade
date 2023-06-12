@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      {{title}}
-    </title>
+    <title>{{title}}</title>
     {% if description %}
       <meta name="description" content="{{description}}"/>
     {% endif %}
     {% block head %}{% endblock %}
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" type="text/css" href="/static/css/main.css"/>
   </head>
   <body class="page--{{path}}">

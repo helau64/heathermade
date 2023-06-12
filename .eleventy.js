@@ -66,6 +66,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy favicon to route of /_site
   eleventyConfig.addPassthroughCopy("./app/favicon.ico");
+  eleventyConfig.addPassthroughCopy("./app/apple-touch-icon.png");
 
   // Minify HTML
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
