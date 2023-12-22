@@ -15,12 +15,8 @@
     }
 
     &:hover, &:focus, &:active {
-        .stroke-change {
-            @apply stroke-red;
-        }
-
         .fill-change {
-            @apply fill-red;
+            @apply fill-green;
         }
     }
 }
