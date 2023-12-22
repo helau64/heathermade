@@ -66,9 +66,9 @@
     }
 }
 
-@include max-width(md) {
+@media screen(max-md) {
     .listings--home {
-        max-width: rem(400px);
+        max-width: rem-convert(400px);
     }
 
     .listings--home {
@@ -159,7 +159,7 @@
     }
 }
 
-@include max-width(sm) {
+@media screen(max-sm) {
     .listings--work {
         &.no-macy {
             @apply grid-cols-1 gap-4;

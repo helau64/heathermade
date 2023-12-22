@@ -16,7 +16,7 @@
     @apply flex gap-3 flex-wrap;
 }
 
-@include min-width(lg) {
+@media screen(min-lg) {
     .filters__items {
         @apply flex-col;
     }

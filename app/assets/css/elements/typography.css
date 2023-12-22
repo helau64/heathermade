@@ -12,7 +12,7 @@ h1 {
     @apply font-semibold;
     @apply tracking-wide;
 
-    @include max-width(md) {
+    @media screen(max-md) {
         @apply text-5xl;
     }
 }
@@ -23,7 +23,7 @@ h2 {
     @apply font-semibold;
     @apply tracking-wide;
 
-    @include max-width(md) {
+    @media screen(max-md) {
         @apply text-3xl;
     }
 }

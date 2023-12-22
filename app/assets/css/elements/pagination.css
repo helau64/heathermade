@@ -19,6 +19,6 @@
 
     .pagination__previous,
     .pagination__next {
-        width: rem(100px);
+        width: rem-convert(100px);
     }
 }

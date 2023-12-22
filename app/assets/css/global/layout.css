@@ -33,7 +33,7 @@ body {
     max-width: $max-text-width;
 }
 
-@include max-width(md) {
+@media screen(max-md) {
     .content {
         @apply pb-16 pt-12;
     }

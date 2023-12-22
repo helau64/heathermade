@@ -39,19 +39,19 @@
     @apply font-bold;
 }
 
-@include min-width(md) {
+@media screen(min-md) {
     .hero {
         @apply mt-8;
     }
 }
 
-@include max-width(lg) {
+@media screen(max-lg) {
     .hero .contained-width {
         left: 10px;
     }
 }
 
-@include max-width(md) {
+@media screen(max-md) {
     .hero .contained-width {
         left: 15px;
     }

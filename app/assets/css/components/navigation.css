@@ -32,7 +32,7 @@
     }
 }
 
-@include max-width(lg) {
+@media screen(max-lg) {
     .navigation {
         @apply relative;
     }
@@ -70,14 +70,14 @@
     }
 }
 
-@include between-widths(md, lg) {
+@media screen(min-md) and screen(max-lg) {
     .navigation__items {
         @apply -ml-8;
         @apply px-8;
     }
 }
 
-@include min-width(lg) {
+@media screen(min-lg) {
     .navigation__items {
         @apply flex;
     }

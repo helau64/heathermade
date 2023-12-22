@@ -1,11 +1,11 @@
 .mobile-only {
-    @include min-width(lg) {
+    @media screen(min-lg) {
         @apply hidden;
     }
 }
 
 .desktop-only {
-    @include max-width(lg) {
+    @media screen(max-lg) {
         @apply hidden;
     }
 }

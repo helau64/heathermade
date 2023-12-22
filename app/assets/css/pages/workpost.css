@@ -21,7 +21,7 @@
     }
 }
 
-@include min-width(lg) {
+@media screen(min-lg) {
     .page--workpost__content {
         @apply grid grid-cols-12 gap-12;
     }
@@ -35,13 +35,13 @@
     }
 }
 
-@include max-width(lg) {
+@media screen(max-lg) {
     .page--workpost__content {
         @apply flex flex-col gap-8;
     }
 }
 
-@include between-widths(md, lg) {
+@media screen(min-md) and screen(max-lg) {
     .page--workpost__image-container {
         @apply max-w-2xl;
     }
