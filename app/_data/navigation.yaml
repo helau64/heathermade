@@ -1,7 +1,5 @@
 ---
 items:
-  - text: About
-    url: "/about"
   - text: Work
     url: "/work"
   - text: Notes

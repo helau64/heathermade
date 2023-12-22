@@ -13,49 +13,40 @@ module.exports = {
         pink: '#E3B4D2',
       },
       fontFamily: {
-        goodsans: [
-          'Good Sans',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+        serif: [
+          'Bellefair',
+          'ui-serif',
+          'Georgia',
+          'Cambria', 
+          'Times New Roman',
+          'Times',
+          'serif'
         ],
-        reckless: [
-          'Reckless',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
           'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
         ]
       },
-      rotate: {
-        '4': '4deg',
-        '8': '8deg'
-      }
     },
     screens: {
-      xxs: '350px',
-      xs: '580px',
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px'
+      'max-xl': {max: '1279px'},
+      'min-xl': '1280px',
+      'max-lg': {max: '1023px'},
+      'min-lg': '1024px',
+      'max-md': {max: '767px'},
+      'min-md': '768px',
+      'max-sm': {max: '639px'},
+      'min-sm': '640px',
+      'max-xs': {max: '579px'},
+      'min-xs': '580px',
+      'max-xxs': {max: '349px'},
+      'min-xxs': '350px',
     }
   },
   variants: {},

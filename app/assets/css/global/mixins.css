@@ -1,52 +1,23 @@
 /*------------------------------------*\
-  #BREAKPOINT-MIXINS
-\*------------------------------------*/
-
-@mixin min-width($breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
-
-    @media (min-width: $breakpoint-value) {
-        @content;
-    }
-}
-
-@mixin max-width($breakpoint) {
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
-
-    @media (max-width: $breakpoint-value) {
-        @content;
-    }
-}
-
-@mixin between-widths($lower, $upper) {
-    $lower-breakpoint: map-get($breakpoints, $lower);
-    $upper-breakpoint: map-get($breakpoints, $upper);
-
-    @media (min-width: $lower-breakpoint) and (max-width: $upper-breakpoint) {
-        @content;
-    }
-}
-
-/*------------------------------------*\
   #TAILWIND-MIXINS
 \*------------------------------------*/
 
- @layer utilities {
+@layer utilities {
     .contained-width {
         @apply mx-auto;
 
         max-width: $max-width;
-        padding-left: rem(20px);
-	    padding-right: rem(20px);
+        padding-left: rem-convert(30px);
+	    padding-right: rem-convert(30px);
 
-        @media screen(md) {
-            padding-left: rem(40px);
-            padding-right: rem(40px);
+        @media screen(min-md) {
+            padding-left: rem-convert(60px);
+            padding-right: rem-convert(60px);
         }
 
-        @media screen(xl) {
-            padding-left: rem(140px);
-            padding-right: rem(140px);
+        @media screen(min-xl) {
+            padding-left: rem-convert(140px);
+            padding-right: rem-convert(140px);
         }
     }
- }
+}

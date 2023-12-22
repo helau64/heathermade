@@ -1,33 +1,18 @@
-.page--home,
+.page--home {
+    .page-specific-bg {
+        @apply bg-stone-50;
+    }
+}
+
 .page--tags {
     .page-specific-bg {
         @apply bg-blue;
-
-        path {
-            @apply fill-blue;
-        }
     }
 }
 
 .page--contact {
     .page-specific-bg {
-        @apply bg-sunflower;
-        @apply text-black;
-
-        path {
-            @apply fill-sunflower;
-        }
-    }
-}
-
-.page--about {
-    .page-specific-bg {
         @apply bg-orange;
-        @apply text-black;
-
-        path {
-            @apply fill-orange;
-        }
     }
 }
 
@@ -35,21 +20,11 @@
 .page--note {
     .page-specific-bg {
         @apply bg-pink;
-        @apply text-black;
-
-        path {
-            @apply fill-pink;
-        }
     }
 }
 
 .page--work {
     .page-specific-bg {
         @apply bg-green;
-        @apply text-white;
-
-        path {
-            @apply fill-green;
-        }
     }
 }

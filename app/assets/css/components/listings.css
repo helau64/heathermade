@@ -1,89 +1,10 @@
 /*------------------------------------*\
-  #LISTINGS-HOME
-\*------------------------------------*/
-
-.listings--home {
-    @apply flex flex-col;
-
-    > *:nth-of-type(even) {
-        @apply self-end;
-    }
-
-    > *:nth-of-type(odd) {
-        @apply self-start;
-    }
-}
-
-.listings--home {
-    .listings__item {
-        @apply my-2;
-
-        h2 {
-            @apply relative z-10;
-        }
-
-        a {
-            @apply no-underline;
-            @apply block;
-            @apply relative;
-            @apply p-4;
-
-            &:focus, &:hover, &:active {
-                &:after {
-                    @apply bg-green;
-                }
-            }
-        }
-    }
-}
-
-.listings--home {
-    .listings__item a:after {
-        content: "";
-
-        @apply absolute z-0;
-        @apply left-0 top-4;
-        @apply w-full h-3/4;
-        @apply bg-sunflower;
-    }
-
-    .listings__item:nth-of-type(1) {
-        a:after {
-            @apply rotate-2 skew-x-12;
-        }
-    }
-
-    .listings__item:nth-of-type(2) {
-        a:after {
-            @apply -rotate-12 skew-y-6;
-        }
-    }
-
-    .listings__item:nth-of-type(3) {
-        a:after {
-            @apply rotate-6 skew-x-12;
-        }
-    }
-}
-
-@include max-width(md) {
-    .listings--home {
-        max-width: rem(400px);
-    }
-
-    .listings--home {
-        .listings__item:after {
-            @apply top-2;
-        }
-    }
-}
-
-/*------------------------------------*\
   #LISTINGS-NOTES
 \*------------------------------------*/
 
 .listings--notes {
     @apply flex flex-col gap-12;
+    @apply font-sans;
 }
 
 .listings--notes {
@@ -105,13 +26,13 @@
     }
 
     h3 {
-        @apply text-4xl;
-        @apply font-reckless font-semibold;
+        @apply text-3xl;
+        @apply font-serif;
     }
 
     .listings__date {
         @apply text-sm;
-        @apply font-bold;
+        @apply font-semibold;
         @apply pt-2 mt-2;
         @apply border-t-2 border-blue;
     }
@@ -134,8 +55,8 @@
 .listings--work {
     .listings__link {
         @apply inline-block;
-        @apply p-4;
-        @apply bg-sunflower;
+        @apply p-1;
+        @apply bg-green;
     }
 
     .listings__link-content {
@@ -159,7 +80,7 @@
     }
 }
 
-@include max-width(sm) {
+@media screen(max-sm) {
     .listings--work {
         &.no-macy {
             @apply grid-cols-1 gap-4;

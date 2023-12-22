@@ -6,7 +6,7 @@ module.exports = {
     'postcss-atroot': {},
     'postcss-map-get': {},
     'postcss-property-lookup': {},
-    'postcss-rem': {baseline: 16},
+    'postcss-rem': {baseline: 24},
     'tailwindcss/nesting': {},
     tailwindcss: {},
     autoprefixer: {}

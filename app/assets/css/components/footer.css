@@ -1,6 +1,7 @@
 .footer {
     @apply bg-red;
     @apply relative;
+    @apply font-sans text-xs;
 }
 
 .footer__border {
