@@ -13,35 +13,24 @@ module.exports = {
         pink: '#E3B4D2',
       },
       fontFamily: {
-        goodsans: [
-          'Good Sans',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
-          'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+        serif: [
+          'Bellefair',
+          'ui-serif',
+          'Georgia',
+          'Cambria', 
+          'Times New Roman',
+          'Times',
+          'serif'
         ],
-        reckless: [
-          'Reckless',
-          '-apple-system',
-          'BlinkMacSystemFont',
-          '"Segoe UI"',
-          'Roboto',
-          '"Helvetica Neue"',
-          'Arial',
-          '"Noto Sans"',
+        sans: [
+          'Inter',
+          'ui-sans-serif',
+          'system-ui',
           'sans-serif',
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji'
         ]
       },
       rotate: {

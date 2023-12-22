@@ -79,7 +79,7 @@
         
         h1 {
             @apply uppercase;
-            @apply font-goodsans;
+            @apply font-sans;
             @apply text-center;
         }
     }

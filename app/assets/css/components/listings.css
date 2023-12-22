@@ -106,7 +106,7 @@
 
     h3 {
         @apply text-4xl;
-        @apply font-reckless font-semibold;
+        @apply font-serif font-semibold;
     }
 
     .listings__date {

@@ -1,142 +1,98 @@
+
 /*------------------------------------*\
-  #GoodSans
+  #INTER
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'Good Sans';
-    src: url('/static/fonts/GoodSans/GoodSans-Light.woff') format('woff'),
-         url('/static/fonts/GoodSans/GoodSans-Light.woff2') format('woff2'),
-         url('/static/fonts/GoodSans/GoodSans-Light.ttf') format('ttf');
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Thin.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Thin.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-ExtraLight.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-ExtraLight.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-ExtraLight.ttf') format('ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Light.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Light.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Good Sans';
-    src: url('/static/fonts/GoodSans/GoodSans-Regular.woff') format('woff'),
-         url('/static/fonts/GoodSans/GoodSans-Regular.woff2') format('woff2'),
-         url('/static/fonts/GoodSans/GoodSans-Regular.ttf') format('ttf');
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Regular.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Regular.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Regular.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Good Sans';
-    src: url('/static/fonts/GoodSans/GoodSans-Medium.woff') format('woff'),
-         url('/static/fonts/GoodSans/GoodSans-Medium.woff2') format('woff2'),
-         url('/static/fonts/GoodSans/GoodSans-Medium.ttf') format('ttf');
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Medium.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Medium.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Medium.ttf') format('ttf');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Good Sans';
-    src: url('/static/fonts/GoodSans/GoodSans-Bold.woff') format('woff'),
-         url('/static/fonts/GoodSans/GoodSans-Bold.woff2') format('woff2'),
-         url('/static/fonts/GoodSans/GoodSans-Bold.ttf') format('ttf');
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-SemiBold.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-SemiBold.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Bold.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Bold.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Good Sans';
-    src: url('/static/fonts/GoodSans/GoodSans-Black.woff') format('woff'),
-         url('/static/fonts/GoodSans/GoodSans-Black.woff2') format('woff2'),
-         url('/static/fonts/GoodSans/GoodSans-Black.ttf') format('ttf');
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-ExtraBold.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-ExtraBold.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/static/fonts/Inter/Inter-Black.woff') format('woff2'),
+         url('/static/fonts/Inter/Inter-Black.woff2') format('woff'),
+         url('/static/fonts/Inter/Inter-Black.ttf') format('ttf');
     font-weight: 900;
     font-style: normal;
 }
 
 /*------------------------------------*\
-  #Reckless
+  #BELLEFAIR
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-LightItalic.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-LightItalic.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-LightItalic.ttf') format('ttf');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-Light.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-Light.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-Light.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-RegularItalic.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-RegularItalic.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-RegularItalic.ttf') format('ttf');
+    font-family: 'Bellefair';
+    src: url('/static/fonts/Bellefair/Bellefair-Regular.woff') format('woff2'),
+         url('/static/fonts/Bellefair/Bellefair-Regular.woff2') format('woff'),
+         url('/static/fonts/Bellefair/Bellefair-Regular.ttf') format('ttf');
     font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-Regular.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-Regular.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-Regular.ttf') format('ttf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-MediumItalic.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-MediumItalic.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-MediumItalic.ttf') format('ttf');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-Medium.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-Medium.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-Medium.ttf') format('ttf');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-SemiBoldItalic.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-SemiBoldItalic.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-SemiBoldItalic.ttf') format('ttf');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-SemiBold.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-SemiBold.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-SemiBold.ttf') format('ttf');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-BoldItalic.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-BoldItalic.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-BoldItalic.ttf') format('ttf');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Reckless';
-    src: url('/static/fonts/Reckless/Reckless-Bold.woff') format('woff'),
-         url('/static/fonts/Reckless/Reckless-Bold.woff2') format('woff2'),
-         url('/static/fonts/Reckless/Reckless-Bold.ttf') format('ttf');
-    font-weight: 700;
     font-style: normal;
 }
