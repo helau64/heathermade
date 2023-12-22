@@ -13,7 +13,8 @@
 
 .page--workpost__media {
     @apply flex flex-wrap gap-1;
-    @apply text-sm;
+    @apply capitalize font-semibold;
+    @apply font-sans text-xs;
     @apply mb-3;
 
     a {

@@ -2,9 +2,9 @@
     @apply no-underline;
     @apply bg-green;
     @apply text-white;
-    @apply px-4 py-1;
-    @apply uppercase font-bold tracking-wide;
-    @apply text-sm;
+    @apply px-2 py-1;
+    @apply capitalize font-semibold;
+    @apply font-sans text-xs;
 
     &:hover, &:focus, &:active {
         @apply bg-sunflower;
@@ -13,7 +13,7 @@
 }
 
 .filters__items {
-    @apply flex gap-3 flex-wrap;
+    @apply flex gap-2 flex-wrap;
 }
 
 @media screen(min-lg) {

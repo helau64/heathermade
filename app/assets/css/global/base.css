@@ -1,8 +1,14 @@
 html {
-    font-size: 16px;
+    font-size: 24px;
     scroll-behavior: smooth;
 }
 
 body {
     @apply bg-stone-50;
+}
+
+@media screen(max-sm) {
+    html {
+        font-size: 18px;
+    }
 }

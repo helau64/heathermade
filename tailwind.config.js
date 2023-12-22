@@ -33,10 +33,6 @@ module.exports = {
           'Noto Color Emoji'
         ]
       },
-      rotate: {
-        '4': '4deg',
-        '8': '8deg'
-      }
     },
     screens: {
       'max-xl': {max: '1279px'},

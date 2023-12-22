@@ -12,7 +12,7 @@ body {
 }
 
 .content {
-    @apply pb-16 pt-20;
+    @apply py-8;
 
     flex: 1 0 auto;
     justify-self: flex-start;
@@ -31,10 +31,4 @@ body {
 
 .max-text-width {
     max-width: $max-text-width;
-}
-
-@media screen(max-md) {
-    .content {
-        @apply pb-16 pt-12;
-    }
 }

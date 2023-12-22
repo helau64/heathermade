@@ -6,8 +6,8 @@
 
 .taglist__tag {
     @apply inline-block;
-    @apply uppercase font-bold tracking-wide;
-    @apply text-sm;
+    @apply capitalize font-semibold;
+    @apply font-sans text-xs;
     @apply no-underline;
     @apply bg-green;
     @apply text-white;

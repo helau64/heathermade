@@ -1,12 +1,13 @@
 .pagination {
     @apply mt-8;
+    @apply font-sans;
 
     ol {
         @apply flex gap-2 justify-center;
     }
 
     a[aria-current="page"] {
-        @apply font-bold;
+        @apply font-semibold;
     }
 
     .pagination__previous {

@@ -2,7 +2,8 @@
     @apply flex justify-between items-center;
     @apply contained-width;
     @apply w-full;
-    @apply font-medium;
+    @apply font-sans font-medium;
+    @apply text-sm;
 
     height: $nav-height;
 }
