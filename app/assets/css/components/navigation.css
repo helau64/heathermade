@@ -29,6 +29,12 @@
     }
 }
 
+.navigation__toggle {
+    svg {
+        @apply pointer-events-none;
+    }
+}
+
 @media screen(max-lg) {
     .navigation {
         @apply relative;
