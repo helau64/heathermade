@@ -2,7 +2,5 @@
 items:
   - text: Work
     url: "/work"
-  - text: Notes
-    url: "/notes"
   - text: Contact
     url: "/contact"
