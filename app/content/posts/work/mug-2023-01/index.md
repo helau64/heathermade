@@ -1,6 +1,6 @@
 ---
 title: Mug (2023)
-permalink: "work/mug-2023-1/"
+permalink: "work/mug-2023/"
 date: 2023-06-01
 thumbnail: "images/mug_1.jpg"
 images:

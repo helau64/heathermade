@@ -1,6 +1,6 @@
 ---
-title: Vase (2023)
-permalink: "work/vessel-2023-1/"
+title: Vessel (2023)
+permalink: "work/vessel-2023/"
 date: 2023-01-01
 thumbnail: "images/vessel_1.jpg"
 images:
