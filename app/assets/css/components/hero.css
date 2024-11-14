@@ -1,6 +1,5 @@
 .hero {
     @apply mt-8;
-    @apply uppercase;
 }
 
 .hero__date {

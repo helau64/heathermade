@@ -1,9 +1,9 @@
 .page-home__decoration {
     @apply flex gap-4 justify-between;
-    @apply mb-10;
+    @apply mb-8;
 
     svg {
-        max-height: rem-convert(200px);
+        max-height: rem-convert(160px);
         @apply w-auto h-auto;
     }
 
@@ -20,7 +20,7 @@
 
 @media screen(min-md) {
     .page-home__decoration {
-        @apply mt-6;
+        @apply mt-4;
     }
 
     .page-home__content {
