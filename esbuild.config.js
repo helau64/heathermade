@@ -6,12 +6,14 @@ const postcss = require('esbuild-postcss');
 
 const watchDirectories = [
     './app/assets/css/**/*.css',
+    './app/assets/js/**/*.js',
     './app/**/*.njk',
 ]
 
 const config = {
-    entryPoints: ['app/assets/css/main.css'],
-    outfile: '_site/static/css/main.css',
+    entryPoints: ['app/assets/js/main.js'],
+    entryNames: '[ext]/[name]',
+    outdir: '_site/static',
     bundle: true,
     minify: true,
     external: ['*.woff', '*.woff2', '*.ttf'],

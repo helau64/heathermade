@@ -1,3 +1,5 @@
+import '../css/main.css';
+
 import initNavigationToggle from './components/navigation';
 import initMasonryGrid from './components/masonry';
 import initSlider from './components/slider';
