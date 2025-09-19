@@ -4,9 +4,7 @@
     "rspack": "rspack build --watch --config rspack.config.js",
     "eleventy": "eleventy --watch --serve",
     "debug": "set DEBUG=* & eleventy",
-    "js": "esbuild app/assets/js/main.js --bundle --watch --outfile=_site/static/js/main.js",
-    "css": "node esbuild.config.js --watch",
-    "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production node esbuild.config.js",
+    "build": "cross-env NODE_ENV=production eleventy && cross-env NODE_ENV=production rspack build --config rspack.config.js",
     "browsersync": "browser-sync start --server _site --files _site --port 8080 --no-notify --no-open"
   },
   "devDependencies": {
