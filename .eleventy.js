@@ -1,6 +1,6 @@
 const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-terser");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
