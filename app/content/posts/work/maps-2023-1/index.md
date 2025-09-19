@@ -1,5 +1,5 @@
 ---
-title: wiggle world (2023)
+title: wiggle world
 permalink: "work/wiggle-world/"
 date: 2023-05-26
 thumbnail: "images/map_1.jpg"

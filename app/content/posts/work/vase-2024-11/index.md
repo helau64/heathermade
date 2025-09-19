@@ -1,5 +1,5 @@
 ---
-title: Vase (2024)
+title: Vase
 permalink: "work/vase-2024/"
 date: 2024-11-01
 thumbnail: "images/vase_3.jpg"

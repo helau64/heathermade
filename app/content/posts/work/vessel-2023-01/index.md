@@ -1,5 +1,5 @@
 ---
-title: Vessel (2023)
+title: Vessel
 permalink: "work/vessel-2023/"
 date: 2023-01-01
 thumbnail: "images/vessel_1.jpg"

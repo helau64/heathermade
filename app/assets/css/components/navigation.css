@@ -36,6 +36,8 @@
 .navigation__toggle {
     svg {
         pointer-events: none;
+        height: 2rem;
+        width: 2rem;
     }
 }
 

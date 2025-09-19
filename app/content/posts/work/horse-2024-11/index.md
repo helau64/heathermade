@@ -1,5 +1,5 @@
 ---
-title: Horse (2023)
+title: Horse
 permalink: "work/horse-2023/"
 date: 2023-03-01
 thumbnail: "images/horse_4.jpg"
