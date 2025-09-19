@@ -19,7 +19,7 @@ medium:
     - generative art
 ---
 
-Open variable edition / A4 / Axidraw pen plotter
+A4 / Pen plotter
 
 Code written in p5.js
 

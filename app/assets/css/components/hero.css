@@ -1,16 +1,17 @@
 .hero {
-    @apply mt-8;
+    margin-top: 2rem;
 }
 
 .hero__date {
-    @apply mt-1;
-    @apply font-sans font-semibold;
-    @apply text-sm;
+    margin-top: 0.25rem;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: var(--text-sm);
 }
 
-@media screen(min-md) {
+@media (--min-md) {
     .hero {
-        @apply mt-10;
+        margin-top: 2.5rem;
     }
 }
 
@@ -21,8 +22,8 @@
 .page--note {
     .hero {
         h1 {
-            @apply text-3xl;
-            @apply normal-case;
+            font-size: var(--text-3xl);
+            text-transform: none;
         }
     }
 }
@@ -33,10 +34,11 @@
 
 .page--home {
     .hero {
-        @apply py-0;
+        padding-top: 0;
+        padding-bottom: 0;
 
         h1 {
-            @apply text-5xl;
+            font-size: var(--text-5xl);
         }
     }
 }

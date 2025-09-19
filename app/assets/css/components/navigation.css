@@ -1,91 +1,96 @@
 .navigation__content {
-    @apply flex justify-between items-center;
-    @apply contained-width;
-    @apply w-full;
-    @apply font-sans font-medium;
-    @apply text-sm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: var(--text-sm);
+    height: var(--nav-height);
 
-    height: $nav-height;
+    @extend .contained-width;
 }
 
 .navigation__logo {
     svg {
-        @apply h-12;
-        @apply w-12;
+        height: 3rem;
+        width: 3rem;
     }
 
     &:hover, &:focus, &:active {
         .fill-change {
-            @apply fill-green;
+            fill: var(--green);
         }
     }
 }
 
 .navigation__logo {
-    @apply uppercase no-underline;
+    text-transform: uppercase;
+    text-decoration: none;
 
     &:hover, &:focus, &:active {
-        @apply text-red;
+        color: var(--red);
     }
 }
 
 .navigation__toggle {
     svg {
-        @apply pointer-events-none;
+        pointer-events: none;
     }
 }
 
-@media screen(max-lg) {
+@media (--max-lg) {
     .navigation {
-        @apply relative;
+        position: relative;
     }
 
     .navigation__items {
-        @apply absolute z-20;
-        @apply w-full;
-        @apply p-4;
-        @apply -ml-4;
-        @apply bg-stone-50;
-
-        height: calc(100vh - $nav-height);
-        top: $nav-height;
+        position: absolute;
+        z-index: 20;
+        width: 100%;
+        padding: 1rem;
+        margin-left: -1rem;
+        height: calc(100vh - var(--nav-height));
+        top: var(--nav-height);
+        background-color: var(--stone-50);
     }
 
     .navigation__item {
-        @apply mb-2;
-        @apply text-lg;
+        margin-bottom: 0.5rem;
+        font-size: var(--text-lg);
     }
 
     .navigation__toggle[aria-expanded="true"] {
         .icon-hamburger {
-            @apply hidden;
+            display: none;
         }
     }
 
     .navigation__toggle[aria-expanded="false"] {
         .icon-cross {
-            @apply hidden;
+            display: none;
         }
 
         + .navigation__items {
-            @apply hidden;
+            display: none;
         }
     }
 }
 
-@media screen(min-md) and screen(max-lg) {
+@media (--min-md) and (--max-lg) {
     .navigation__items {
-        @apply -ml-8;
-        @apply px-8;
+        margin-left: -2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
-@media screen(min-lg) {
+@media (--min-lg) {
     .navigation__items {
-        @apply flex;
+        display: flex;
     }
 
     .navigation__item {
-        @apply ml-8;
+        margin-left: 2rem;
     }
 }

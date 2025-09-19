@@ -1,20 +1,25 @@
 .taglist {
-    @apply flex flex-wrap gap-2;
-    @apply my-4 pt-4;
-    @apply border-t-2 border-green;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    padding-top: 1rem;
+    border-top: 2px solid var(--green);
 }
 
 .taglist__tag {
-    @apply inline-block;
-    @apply capitalize font-semibold;
-    @apply font-sans text-xs;
-    @apply no-underline;
-    @apply bg-green;
-    @apply text-white;
-    @apply p-2;
+    display: inline-block;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--sans);
+    font-size: var(--text-xs);
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.5rem;
 
     &:hover, &:focus, &:active {
-        @apply bg-sunflower;
-        @apply text-black;
+        background-color: var(--sunflower);
+        color: var(--black);
     }
 }

@@ -1,14 +1,14 @@
 module.exports = {
+  ident: 'postcss-loader',
   syntax: 'postcss-scss',
   plugins: {
     'postcss-easy-import': {},
     'postcss-advanced-variables': {},
     'postcss-atroot': {},
-    'postcss-map-get': {},
+    'postcss-extend-rule': {},
     'postcss-property-lookup': {},
     'postcss-rem': {baseline: 24},
-    'tailwindcss/nesting': {},
-    tailwindcss: {},
-    autoprefixer: {}
+    'postcss-custom-media': {},
+    'autoprefixer': {}
   },
 };

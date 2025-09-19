@@ -1,15 +1,9 @@
 /*------------------------------------*\
-  #TAILWIND-IMPORTS
-\*------------------------------------*/
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-
-/*------------------------------------*\
   #LIB-IMPORTS
 \*------------------------------------*/
 
 @import "libs/glide.core";
+@import "libs/preflight";
 
 /*------------------------------------*\
   #GLOBAL-IMPORTS
@@ -53,15 +47,3 @@
 @import "pages/work";
 @import "pages/workpost";
 @import "pages/home";
-
-/*------------------------------------*\
-  #TAILWIND-IMPORTS
-\*------------------------------------*/
-
-@import "tailwindcss/utilities";
-
-/*------------------------------------*\
-  #FALLBACK-IMPORTS
-\*------------------------------------*/
-
-@import "global/fallbacks";

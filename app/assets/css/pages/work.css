@@ -1,25 +1,27 @@
-@media screen(min-lg) {
+@media (--min-lg) {
     .page--work__content {
-        @apply grid grid-cols-12 gap-8;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 2rem;
     }
 
     .page--work__sidebar {
-        @apply col-span-3;
-        @apply border-r-4 border-green;
+        grid-column: span 3 / span 3;
+        border-right: 4px solid var(--green);
     }
 
     .page--work__body {
-        @apply col-span-9;
+        grid-column: span 9 / span 9;
     }
 }
 
-@media screen(max-lg) {
+@media (--max-lg) {
     .page--work__sidebar {
-        @apply border-b-4 border-green;
-        @apply pb-2;
+        border-bottom: 4px solid var(--green);
+        padding-bottom: 0.5rem;
     }
 
     .page--work__body {
-        @apply mt-4;
+        margin-top: 1rem;
     }
 }

@@ -1,21 +1,23 @@
 .pagination {
-    @apply mt-8;
-    @apply font-sans;
+    margin-top: 2rem;
+    font-family: var(--sans);
 
     ol {
-        @apply flex gap-2 justify-center;
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
     }
 
     a[aria-current="page"] {
-        @apply font-semibold;
+        font-weight: 600;
     }
 
     .pagination__previous {
-        @apply mr-auto;
+        margin-right: auto;
     }
 
     .pagination__next {
-        @apply ml-auto;
+        margin-left: auto;
     }
 
     .pagination__previous,

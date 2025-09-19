@@ -1,29 +1,33 @@
 .page-home__decoration {
-    @apply flex gap-4 justify-between;
-    @apply mb-8;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 
     svg {
         max-height: rem-convert(160px);
-        @apply w-auto h-auto;
+        width: auto;
+        height: auto;
     }
 
     svg:nth-of-type(even) {
-        @apply -scale-x-100;
+        transform: scaleX(-1) scaleY(1);
     }
 }
 
 .page-home__content {
     p {
-        @apply my-2;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
-@media screen(min-md) {
+@media (--min-md) {
     .page-home__decoration {
-        @apply mt-4;
+        margin-top: 1rem;
     }
 
     .page-home__content {
-        @apply text-right;
+        text-align: right;
     }
 }

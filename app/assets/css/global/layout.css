@@ -1,34 +1,36 @@
 html, body {
-    @apply h-full;
+    height: 100%;
 }
 
 body {
-    @apply flex flex-col;
-    @apply overflow-x-hidden;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 .footer {
-    @apply flex-shrink-0;
+    flex-shrink: 0;
 }
 
 .content {
-    @apply py-8;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     flex: 1 0 auto;
     justify-self: flex-start;
 }
 
 .full-width {
-    @apply w-full;
-    @apply relative;
-    @apply left-1/2;
-    @apply transform -translate-x-1/2;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .max-width {
-    max-width: $max-width;
+    max-width: var(--max-width);
 }
 
 .max-text-width {
-    max-width: $max-text-width;
+    max-width: var(--max-text-width);
 }

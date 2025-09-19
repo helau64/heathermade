@@ -1,28 +1,35 @@
 .footer {
-    @apply bg-red;
-    @apply relative;
-    @apply font-sans text-xs;
+    background-color: var(--red);
+    position: relative;
+    font-family: var(--sans);
+    font-size: var(--text-xs);
 }
 
 .footer__border {
-    @apply absolute top-1;
-    @apply w-full;
-    @apply -translate-y-full;
+    position: absolute;
+    top: 0.25rem;
+    width: 100%;
+    transform: translateY(-100%);
 }
 
 .footer__content {
-    @apply relative z-10;
-    @apply contained-width;
-    @apply text-center;
-    @apply font-medium;
-    @apply pb-8 pt-4;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+
+    @extend .contained-width;
 }
 
 .footer__links {
-    @apply flex justify-center;
-    @apply mb-4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
 
     li {
-        @apply mx-2;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }

@@ -4,10 +4,10 @@ html {
 }
 
 body {
-    @apply bg-stone-50;
+    background-color: var(--stone-50);
 }
 
-@media screen(max-sm) {
+@media (--max-sm) {
     html {
         font-size: 18px;
     }

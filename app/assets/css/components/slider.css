@@ -1,28 +1,36 @@
 .glide__track {
-    @apply bg-stone-700
+    background-color: var(--stone-700);
 }
 
 .glide__slide {
-    @apply bg-stone-700 py-6;
-    @apply h-auto;
-    @apply flex items-center;
+    background-color: var(--stone-700);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    height: auto;
+    display: flex;
+    align-items: center;
 }
 
 .glide__arrows {
-    @apply flex items-center justify-between;
-    @apply px-4 pb-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem 1rem 1rem;
 }
 
 .glide__arrow--left {
     svg {
-        @apply rotate-180;
+        transform: rotate(180deg);
     }
 }
 
 .no-glide {
-    @apply flex flex-col gap-8;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 
     li {
-        @apply bg-stone-700 p-4;
+        background-color: var(--stone-700);
+        padding: 1rem;
     }
 }

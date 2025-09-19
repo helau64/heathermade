@@ -1,23 +1,27 @@
 .filters__link {
-    @apply no-underline;
-    @apply bg-green;
-    @apply text-white;
-    @apply px-2 py-1;
-    @apply capitalize font-semibold;
-    @apply font-sans text-xs;
+    text-decoration: none;
+    background-color: var(--green);
+    color: var(--white);
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--sans);
+    font-size: var(--text-xs);
 
     &:hover, &:focus, &:active {
-        @apply bg-sunflower;
-        @apply text-black;
+        background-color: var(--sunflower);
+        color: var(--black);
     }
 }
 
 .filters__items {
-    @apply flex gap-2 flex-wrap;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
-@media screen(min-lg) {
+@media min-lg {
     .filters__items {
-        @apply flex-col;
+        flex-direction: column;
     }
 }

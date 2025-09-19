@@ -8,16 +8,16 @@ module.exports = {
     },
     output: {
         filename: 'js/[name].js',
-        publicPath: '/_site/static/'
+        path: path.resolve(__dirname, './_site/static/')
     },
     plugins: [
         new rspack.CssExtractRspackPlugin({
-            filename: 'css/[name].min.css',
+            filename: 'css/[name].css',
             chunkFilename: '[id].css',
             ignoreOrder: false
         }),
         new rspack.CopyRspackPlugin({
-            patterns: [{from: './app/assets/fonts', to: '/_site/static/fonts', noErrorOnMissing: true}, {from: './app/assets/images', to: '/_site/static/images', noErrorOnMissing: true}]
+            patterns: [{from: './app/assets/fonts', to: './fonts', noErrorOnMissing: true}, {from: './app/assets/images', to: './images', noErrorOnMissing: true}]
         })
     ],
     module: {
