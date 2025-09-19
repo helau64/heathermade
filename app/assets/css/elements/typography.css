@@ -1,12 +1,12 @@
 body {
     color: var(--black);
-    font-family: var(--sans);
+    font-family: var(--serif);
 
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
 
-h1 {
+h1, .h1 {
     font-size: var(--text-4xl);
     line-height: var(--line-height-4xl);
     font-weight: 600;
@@ -16,12 +16,21 @@ h1 {
     }
 }
 
-h2 {
+h2, .h2 {
     font-size: var(--text-2xl);
     font-weight: 600;
 
     @media (--max-md) {
         font-size: var(--text-xl);
+    }
+}
+
+h3, .h3 {
+    font-size: var(--text-xl);
+    font-weight: 500;
+
+    @media (--max-md) {
+        font-size: var(--text-lg);
     }
 }
 

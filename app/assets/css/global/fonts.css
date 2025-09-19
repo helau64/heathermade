@@ -1,98 +1,112 @@
-
 /*------------------------------------*\
-  #INTER
+  #ALEGREYA
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Thin.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Thin.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Thin.ttf') format('ttf');
-    font-weight: 100;
-    font-style: normal;
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-ExtraLight.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-ExtraLight.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-ExtraLight.ttf') format('ttf');
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Light.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Light.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Light.ttf') format('ttf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Regular.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Regular.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Regular.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Medium.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Medium.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Medium.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-SemiBold.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-SemiBold.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-SemiBold.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Bold.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Bold.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Bold.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-ExtraBold.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-ExtraBold.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-ExtraBold.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('/static/fonts/Inter/Inter-Black.woff') format('woff2'),
-         url('/static/fonts/Inter/Inter-Black.woff2') format('woff'),
-         url('/static/fonts/Inter/Inter-Black.ttf') format('ttf');
+    font-family: 'Alegreya';
+    src: url('/static/fonts/Alegreya/Alegreya-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 /*------------------------------------*\
-  #BELLEFAIR
+  #ALEGREYA_SANS
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'Bellefair';
-    src: url('/static/fonts/Bellefair/Bellefair-Regular.woff') format('woff2'),
-         url('/static/fonts/Bellefair/Bellefair-Regular.woff2') format('woff'),
-         url('/static/fonts/Bellefair/Bellefair-Regular.ttf') format('ttf');
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-Italic.ttf') format('truetype');
     font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: url('/static/fonts/Alegreya_Sans/AlegreyaSans-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }

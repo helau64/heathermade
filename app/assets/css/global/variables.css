@@ -22,7 +22,7 @@
     --stone-900: rgb(28 25 23);
 
     /* Fonts */
-    --sans: 'Inter',
+    --sans: 'Alegreya Sans',
           'ui-sans-serif',
           'system-ui',
           'sans-serif',
@@ -31,7 +31,7 @@
           'Segoe UI Symbol',
           'Noto Color Emoji';
 
-    --serif: 'Bellefair',
+    --serif: 'Alegreya',
           'ui-serif',
           'Georgia',
           'Cambria', 
@@ -43,10 +43,12 @@
     --text-xs: 0.75rem;
     --text-sm: 0.875rem;
     --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
     --text-3xl: 1.875rem;
     --text-4xl: 2.25rem;
     --text-5xl: 3rem;
+    --text-6xl: 3.75rem;
 
     --line-height-4xl: 3.2rem;
 }
