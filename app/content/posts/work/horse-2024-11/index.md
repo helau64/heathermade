@@ -2,18 +2,18 @@
 title: Horse
 permalink: "work/horse-2023/"
 date: 2023-03-01
-thumbnail: "images/horse_4.jpg"
+thumbnail: "images/horse_3.png"
 images:
-    - src: "images/horse_1.jpg"
-      alt: "A miniature red ceramic horse."
-    - src: "images/horse_2.jpg"
-      alt: "A miniature red ceramic horse."
-    - src: "images/horse_3.jpg"
-      alt: "A miniature red ceramic horse."
+    - src: "images/horse_1.png"
+      alt: "A miniature red ceramic horse on a pink background."
+    - src: "images/horse_2.png"
+      alt: "A miniature red ceramic horse on a pink background."
+    - src: "images/horse_3.png"
+      alt: "A miniature red ceramic horse on a pink background."
 tags: 
     - ceramics
 medium: 
     - ceramics
 ---
 
-Stoneware / Paint marker detailing
+Stoneware miniature

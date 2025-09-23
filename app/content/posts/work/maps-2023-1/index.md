@@ -1,6 +1,6 @@
 ---
-title: wiggle world
-permalink: "work/wiggle-world/"
+title: Maps
+permalink: "work/maps-2023/"
 date: 2023-05-26
 thumbnail: "images/map_1.jpg"
 images:

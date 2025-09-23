@@ -8,6 +8,7 @@
     .page--work__sidebar {
         grid-column: span 3 / span 3;
         border-right: 4px solid var(--green);
+        padding-right: 1rem;
     }
 
     .page--work__body {
