@@ -52,18 +52,20 @@
                               </li>
                           {% endfor %}
                       </ul>
-                      <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
-                            <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
-                          </svg>
-                        </button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
-                            <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
-                          </svg>
-                        </button>
-                      </div>
+                      {% if images.length > 1 %}
+                        <div class="glide__arrows" data-glide-el="controls">
+                          <button class="glide__arrow glide__arrow--left" data-glide-dir="<" aria-label="Previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+                              <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+                            </svg>
+                          </button>
+                          <button class="glide__arrow glide__arrow--right" data-glide-dir=">" aria-label="Next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" aria-hidden="true">
+                              <path fill="#FFF" d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/>
+                            </svg>
+                          </button>
+                        </div>
+                      {% endif %}
                     </div>
                 </div>
             </article>  
