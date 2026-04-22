@@ -1,5 +1,5 @@
-const lodash = require("lodash");
-const slugify = require("slugify");
+import lodash from "lodash";
+import slugify from "slugify";
 
 /**
  * // https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
@@ -45,7 +45,7 @@ function strToSlug(str) {
     return slugify(str, options);
 }
 
-module.exports = function(collectionApi) {
+export default function(collectionApi) {
     let media = getAllKeyValues(
         collectionApi.getFilteredByTag("work"),
         "medium"

@@ -1,11 +1,12 @@
-const yaml = require("js-yaml");
-const { DateTime } = require("luxon");
-const htmlmin = require("html-minifier-terser");
-const pageAssetsPlugin = require('eleventy-plugin-page-assets');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+import include from "./app/_11ty/filters/include.js";
+import workMedia from "./app/_11ty/collections/workMedia.js";
+import yaml from "js-yaml";
+import { DateTime } from "luxon";
+import htmlmin from "html-minifier-terser";
+import pageAssetsPlugin from 'eleventy-plugin-page-assets';
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
-module.exports = function (eleventyConfig) {
-
+export default async function(eleventyConfig) {
   // Disable automatic use of your .gitignore
   eleventyConfig.setUseGitIgnore(false);
 
@@ -19,15 +20,14 @@ module.exports = function (eleventyConfig) {
     );
   });
 
-  eleventyConfig.addFilter("include", require("./app/_11ty/filters/include.js"))
+  eleventyConfig.addFilter("include", include)
 
   // Add work collections
-
-  eleventyConfig.addCollection("workPosts", function(collectionApi) {
-    return collectionApi.getFilteredByTag("work");
+  eleventyConfig.addCollection("workPosts", async (collectionsApi) => {
+    return collectionsApi.getFilteredByTag("work");
   });
 
-  eleventyConfig.addCollection("workMedia", require("./app/_11ty/collections/workMedia.js"))
+  eleventyConfig.addCollection("workMedia", workMedia)
 
   // Return all the tags used in a collection
 	eleventyConfig.addFilter("getAllTags", collection => {
@@ -91,4 +91,4 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: "njk",
   };
-};
+}

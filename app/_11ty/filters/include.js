@@ -1,4 +1,4 @@
-const lodash = require("lodash");
+import lodash from "lodash";
 
 /**
  * https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
@@ -12,7 +12,7 @@ const lodash = require("lodash");
  * @return {Array} - new array
  */
 
-module.exports = function (arr, path, value) {
+export default function (arr, path, value) {
   value = lodash.deburr(value).toLowerCase();
   return arr.filter((item) => {
     let pathValue = lodash.get(item, path);
