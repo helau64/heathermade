@@ -1,6 +1,6 @@
 import include from "./app/_11ty/filters/include.js";
 import workMedia from "./app/_11ty/collections/workMedia.js";
-import yaml from "js-yaml";
+import { load } from "js-yaml";
 import { DateTime } from "luxon";
 import htmlmin from "html-minifier-terser";
 import pageAssetsPlugin from 'eleventy-plugin-page-assets';
@@ -46,7 +46,7 @@ export default async function(eleventyConfig) {
 
   // To Support .yaml Extension in _data
   // You may remove this if you can use JSON
-  eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+  eleventyConfig.addDataExtension("yaml", (contents) => load(contents));
 
   // Copy work post images to /_Site
   eleventyConfig.addPlugin(pageAssetsPlugin, {

@@ -25,19 +25,15 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: [
-                ["@babel/preset-env", {
-                  useBuiltIns: "usage",
-                  corejs: 3,
-                }]
-              ]
-            }
+        use: {
+          loader: 'babel-loader',
+          options: {
+            targets: "defaults",
+            presets: [
+              ["@babel/preset-env"]
+            ]
           }
-        ]
+        }
       },
       {
         test: /\.css$/,
